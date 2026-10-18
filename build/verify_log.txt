@@ -1,0 +1,32 @@
+PASS | inline const ANIME == data/anime.json (one source of truth)         | marker block found
+PASS | ANIME block sits at top of the main script                          | 
+PASS | episode counts == researched values                                 | {'kusuriya3': 24, 'seitokai': 12, 'fxkurumi': 12}
+PASS | every show has source URLs                                          | 
+PASS | images local files in images/                                       | images/kusuriya3.webp 67KB, images/seitokai.webp 97KB, images/fxkurumi.webp 99KB
+PASS | no external src/link/url() in HTML                                  | []
+PASS | no pressure wording (뒤처/실패/놓쳤/끊겼/망했)                                | 
+PASS | 3 quest cards                                                       | 
+PASS | page episode counts match research                                  | ['0 / 24화', '0 / 12화', '0 / 12화']
+PASS | episode tiles = counts                                              | 
+PASS | images load locally                                                 | [['images/kusuriya3.webp', True], ['images/kusuriya3.webp', True], ['images/seitokai.webp', True], ['images/fxkurumi.webp', True]]
+PASS | today quest heading + single big button                             | 
+PASS | check updates progress, XP, next action, toast                      | ['1 / 24화', '10', '2화 봤어요', '1화 완료! +10 XP · 배지: 첫 화', 'true', '1']
+PASS | persists after reload (progress, XP, next action follows last show) | ['1 / 24화', '1 / 12화', '20', 'fxkurumi 1화 봤어요']
+PASS | undo (toast), uncheck per episode, per-card undo                    | false ['0 / 12화', '3화 체크를 풀었어요.'] 1 / 12화
+PASS | streak logic over simulated dates                                   | 1일 best1 "오늘부터 연속 기록이 시작됐어요." | 2일 best2 "2일째 이어 가는 중이에요." | 3일 best3 "3일째 이어 가는 중이에요." | 3일 best3 "오늘 1화를 보면 4일이 돼요." | 0일 best3 "쉬어 가는 중이에요. 언제든 1화로 다시 시작하면 돼요." | 1일 best3 "오늘부터 연속 기록이 시작됐어요." | 2일 best3 "2일째 이어 가는 중이에요."
+PASS | gentle wording when streak pauses                                   | 오늘 1화를 보면 4일이 돼요. / 쉬어 가는 중이에요. 언제든 1화로 다시 시작하면 돼요.
+PASS | badges earned (first, s3, five, back) and kept                      | first,s3,back,five
+PASS | uncheck today removes the day from the streak; badges stay          | [1, 4]
+PASS | built-in episode count editable (13 -> blank -> 24), persists       | ['0 / 13화', 13] ['0 / ?화', True] 0 / ?화 ['0 / 24화', '{}']
+PASS | built-in shows: no remote-URL field (upload only)                   | 
+PASS | hide built-in (confirm step), persists, unhide                      | [2, 1] 2 3
+PASS | add show (title, blank count, upload) + persists                    | [4, '테스트 애니', '0 / ?화', True, 'data:image/jpeg;base64', 600] dataURL 15KB; after reload [4, '테스트 애니', 600]
+PASS | upload resized to 600px wide JPEG data URL                          | 600px, 15KB from a 1600x900 PNG
+PASS | unknown total: tiles grow (1 checked -> next tile appears)          | 2
+PASS | edit user show (title, count), persists                             | ['테스트 애니 2', '1 / 5화']
+PASS | quota error: friendly Korean message, nothing half-saved            | dialog stays open, msg="저장 공간이 꽉 찼어요. 이미지를 더 작은 …", toggle reverted=True
+PASS | delete user show needs confirm, persists                            | confirm shown=True, 그만두기 keeps dialog=True, after=[3, True, True]
+PASS | data reset behind confirm                                           | ['0', 0, 0]
+PASS | 0 console errors                                                    | []
+PASS | 0 external requests                                                 | []
+fails: 0

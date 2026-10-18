@@ -1,0 +1,3 @@
+build/originals/
+__pycache__/
+*.pyc

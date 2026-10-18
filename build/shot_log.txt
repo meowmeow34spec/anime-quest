@@ -1,0 +1,26 @@
+== 390
+   scrollWidth : 390
+   small : []
+   contrast light : {'checked': 143, 'minRatioOverNeed': 1.23, 'fails': []}
+   reduced motion : {'running': 0, 'styled': []}
+   small(dialog) : []
+   contrast dialog : {'checked': 9, 'minRatioOverNeed': 1.23, 'fails': []}
+   dark after reload : ['dark', 'rgb(17, 20, 27)']
+   contrast dark : {'checked': 143, 'minRatioOverNeed': 1.62, 'fails': []}
+   contrast dialog dark : {'checked': 9, 'minRatioOverNeed': 1.62, 'fails': []}
+   errors : []
+   external : []
+== 1280
+   scrollWidth : 1280
+   small : []
+   contrast light : {'checked': 143, 'minRatioOverNeed': 1.23, 'fails': []}
+   reduced motion : {'running': 0, 'styled': []}
+   small(dialog) : []
+   contrast dialog : {'checked': 9, 'minRatioOverNeed': 1.23, 'fails': []}
+   dark after reload : ['dark', 'rgb(17, 20, 27)']
+   contrast dark : {'checked': 143, 'minRatioOverNeed': 1.62, 'fails': []}
+   contrast dialog dark : {'checked': 9, 'minRatioOverNeed': 1.62, 'fails': []}
+   errors : []
+   external : []
+== motion allowed
+   [['CSSTransition', 'opacity', 200], ['CSSTransition', 'visibility', 200], ['CSSAnimation', 'aqpop', 180]]

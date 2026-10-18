@@ -1,0 +1,45 @@
+[
+  {
+    "id": "kusuriya3",
+    "title": "약사의 혼잣말 3기",
+    "original": "薬屋のひとりごと 第3期",
+    "totalEpisodes": 24,
+    "image": "images/kusuriya3.webp",
+    "status": "방영 중. 2026년 10월 2일(금) 밤 11시 첫 방송, 분할 2쿨 (2쿨은 2027년 4월 방송 예정)",
+    "note": "시리즈 통산으로는 49~72화 (공식 Blu-ray 1~4권 수록 기준)",
+    "source": [
+      {"label": "공식 Blu-ray 1권 (49~54화 수록)", "url": "https://kusuriyanohitorigoto.jp/season3/bd/vol1.php"},
+      {"label": "공식 Blu-ray 4권 (67~72화 수록)", "url": "https://kusuriyanohitorigoto.jp/season3/bd/vol4.php"},
+      {"label": "공식 방송 정보", "url": "https://kusuriyanohitorigoto.jp/season3/onair/"}
+    ],
+    "imageSource": "https://kusuriyanohitorigoto.jp/season3/assets/img/top/kv.jpg"
+  },
+  {
+    "id": "seitokai",
+    "title": "학생회에도 구멍은 있다",
+    "original": "生徒会にも穴はある！",
+    "totalEpisodes": 12,
+    "image": "images/seitokai.webp",
+    "status": "방영 중. 2026년 10월 3일(토) 24시 30분 TOKYO MX 등에서 첫 방송",
+    "note": "공식 Blu-ray·DVD 6권 구성, 6권에 11~12화 수록",
+    "source": [
+      {"label": "공식 Blu-ray·DVD 6권 (11~12화 수록)", "url": "https://nama-anaru.com/bddvd/?pk=06"},
+      {"label": "공식 방송 정보", "url": "https://nama-anaru.com/onair/"}
+    ],
+    "imageSource": "https://nama-anaru.com/teaser_assets/img/main/main_kv_1.jpg"
+  },
+  {
+    "id": "fxkurumi",
+    "title": "FX전사 쿠루미",
+    "original": "FX戦士くるみちゃん",
+    "totalEpisodes": 12,
+    "image": "images/fxkurumi.webp",
+    "status": "방영 중. 2026년 10월 1일(목) AT-X 21시 30분 첫 방송",
+    "note": "공식 Blu-ray 3권 구성, 3권에 9~12화 수록",
+    "source": [
+      {"label": "공식 Blu-ray 정보 (3권에 9~12화)", "url": "https://fxkurumi-info.com/pkg/"},
+      {"label": "공식 방송 정보", "url": "https://fxkurumi-info.com/onair/"}
+    ],
+    "imageSource": "https://fxkurumi-info.com/assets/img/top/visual/visual1.jpg"
+  }
+]
